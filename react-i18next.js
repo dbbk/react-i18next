@@ -468,7 +468,6 @@ var I18n = function (_Component) {
     });
 
     _this.state = {
-      i18nLoadedAt: null,
       ready: ready
     };
 
@@ -551,7 +550,6 @@ var I18n = function (_Component) {
       if (!this.mounted) return;
 
       this.t = this.getI18nTranslate();
-      this.setState({ i18nLoadedAt: new Date() });
     }
   }, {
     key: 'getI18nTranslate',
